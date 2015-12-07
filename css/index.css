@@ -1,0 +1,78 @@
+*{ padding: 0;margin: 0;box-sizing: border-box;}
+body{
+    font-size: 100%;
+    font-family: cursive;
+    overflow-x: hidden;
+}
+
+.container{
+    position: relative;
+    width:100%;
+    padding: 1%;
+    float: left;
+}
+
+.header{
+    position: relative;
+    width:100%;
+    text-align: center;
+    color:black;
+    padding-top: 10%;
+}
+
+.header .smiley{
+    cursor: pointer;
+    width: 12%;
+    padding-left: 1%;
+    margin-bottom: 3%;
+}
+
+#boardcont{
+    position: relative;
+    width: 100%;
+    margin-left: 0%;
+    float: left;
+}
+
+#boardcont #board{
+    position: relative;
+    width:100%;
+    float: left;
+    margin-left:5%;
+    margin-top: 2%;
+}
+
+#boardcont #board div.row{
+    margin-bottom: 2%;
+    width:100%;
+    float: left;
+}
+
+.box{
+    text-align: center;
+    float: left;
+    margin-right: 1.6%;
+    background: yellow;
+    -webkit-transform : rotateY(-180deg);
+}
+
+.box .smiley{
+    margin-top:-4%;
+    width: 300%;
+}
+
+
+.box.flip{
+  -webkit-animation: flipit 0.5s forwards 1 ;
+}
+
+@-webkit-keyframes flipit{
+  100%{ -webkit-transform : rotateY(0deg);}
+}
+
+#picasso{
+    position: relative;
+    border:1px dashed #F44336;
+    margin-left: 20%;
+    margin-top: 50%;
+}
